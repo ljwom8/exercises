@@ -19,6 +19,7 @@ async function main(){
   let input = await readLine();
 
   process.stdout.write(reverseString(input) + "\n");
+  console.log("w00t")
 }
 
 main();
