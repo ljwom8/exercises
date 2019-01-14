@@ -8,3 +8,4 @@ let node = new Node("a")
 list.append(node)
 
 console.log (JSON.stringify(list))
+list.append(new Node("b"))
