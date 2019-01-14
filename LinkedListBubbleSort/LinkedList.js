@@ -3,6 +3,15 @@ class linkedList{
     this.head = null
     this.tail = null
   }
+  append(node){
+    this.tail.next = node
+    node.prev = this.tail
+    this.tail = node
+    if (this.head === null){
+      this.head = node
+    }
+
+  }
 }
 class linkedListnode {
   constructor(data) {
