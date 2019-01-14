@@ -1,19 +1,20 @@
-class linkedList{
+class LinkedList{
   constructor(){
     this.head = null
     this.tail = null
   }
   append(node){
-    this.tail.next = node
+    if (this.tail !== null){
+      this.tail.next = node
+    }
     node.prev = this.tail
     this.tail = node
     if (this.head === null){
       this.head = node
     }
-
   }
 }
-class linkedListnode {
+class Node {
   constructor(data) {
     this.data = data
     this.prev = null
